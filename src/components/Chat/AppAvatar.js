@@ -67,6 +67,7 @@ const AppAvatar = () => {
         ListFooterComponent={() => <View className="w-10" />}
         renderItem={({ item }) => (
           <TouchableOpacity
+            activeOpacity={0.7}
             onPress={() =>
               navigation.navigate("socialMedia", { platform: item.name })
             }

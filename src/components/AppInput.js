@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet, View, TextInput } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import Colors from "../config/Colors";
 export default function AppInput({
   style,
   iconName,
@@ -33,11 +32,12 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     borderWidth: 1,
-    backgroundColor: Colors.light,
-    borderRadius: 25,
-    borderColor: Colors.light,
+    backgroundColor: "#f5f4f4",
+    borderRadius: 10,
+    borderColor: "#f5f4f4",
     flexDirection: "row",
     padding: 8,
+    height: 52,
     marginVertical: 10,
   },
   icon: {
@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
   },
   TextInput: {
     flex: 1,
-    color: Colors.dark_g,
+    color: "#595959",
     fontSize: 16,
-    fontFamily: "Poppins-regular",
+    fontFamily: "Poppins-semiBold",
     paddingLeft: 6,
   },
 });

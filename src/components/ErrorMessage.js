@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import React from "react";
-import Colors from "../config/Colors";
 
 export default function ErrorMessage({ error, visible }) {
   if (!visible || !error) return null;

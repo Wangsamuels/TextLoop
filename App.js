@@ -3,7 +3,8 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import Fonts from "./src/config/Fonts";
 import { NavigationContainer } from "@react-navigation/native";
-import ChatNav from "./src/Navigation/ChatNav";
+import { MainNav } from "./src/Navigation/MainNav";
+import AuthProvider from "./src/Providers/AuthProvider";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -21,8 +22,10 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <ChatNav />
-    </NavigationContainer>
+    <AuthProvider>
+      <NavigationContainer>
+        <MainNav />
+      </NavigationContainer>
+    </AuthProvider>
   );
 }

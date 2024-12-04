@@ -4,11 +4,11 @@
     "slug": "textLoop",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/textloop.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/textloopsplash.png",
+      "resizeMode": "center",
       "backgroundColor": "#ffffff"
     },
     "ios": {
@@ -23,8 +23,17 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font"
-    ]
+    "plugins": ["expo-font"],
+    "extra": {
+      "eas": {
+        "projectId": "700100c5-6bfd-4653-bff5-2cee76167d26"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "1.0.0"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/700100c5-6bfd-4653-bff5-2cee76167d26"
+    }
   }
 }

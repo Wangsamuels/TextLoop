@@ -1,11 +1,4 @@
-import {
-  StyleSheet,
-  Text,
-  Image,
-  View,
-  FlatList,
-  TouchableOpacity,
-} from "react-native";
+import { Text, Image, View, FlatList, TouchableOpacity } from "react-native";
 import React from "react";
 import { Ionicons, FontAwesome5, FontAwesome6 } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";

@@ -1,32 +1,36 @@
+import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
-import Colors from "../config/Colors";
 function AppButton({ title, handlePress, btnStyle }) {
   return (
-    <TouchableOpacity
-      style={{ ...styles.buttonContainer,...btnStyle}}
-      onPress={handlePress}
+    <LinearGradient
+      colors={["#941500", "#FA2300"]}
+      style={{ ...styles.buttonContainer, ...btnStyle }}
     >
-      <Text style={styles.text}>{title}</Text>
-    </TouchableOpacity>
+      <TouchableOpacity
+        onPress={handlePress}
+        style={{ width: "100%", alignItems: "center" }}
+      >
+        <Text style={styles.text}>{title}</Text>
+      </TouchableOpacity>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   buttonContainer: {
     width: "100%",
-    height: 45,
-    borderRadius: 25,
+    height: 51,
+    borderRadius: 10,
     justifyContent: "center",
     alignItems: "center",
     marginVertical: 6,
-    backgroundColor:Colors.primary
   },
   text: {
-    color: Colors.white,
+    color: "#fff",
     fontSize: 18,
     fontWeight: "bold",
-    textTransform: "uppercase",
+    fontStyle: "Poppins-bold",
   },
 });
 export default AppButton;
